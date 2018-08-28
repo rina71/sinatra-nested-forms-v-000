@@ -7,8 +7,8 @@ module FormsLab
       erb :root
     end
 
-    post '/new' do
-      erb :show
+    get '/new' do
+      erb :new
     end    # code other routes/actions here
 
   end
