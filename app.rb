@@ -12,8 +12,8 @@ module FormsLab
     end    # code other routes/actions here
 
     post '/show' do
-    
-      @pirate = Pirate.new
+
+      @pirate = Pirate.new(params)
       @pirate.name = params[:pirate[name]]
       @pirate.weight = params[:pirate[weight]]
       @pirate.height = params[:pirate[height]]
