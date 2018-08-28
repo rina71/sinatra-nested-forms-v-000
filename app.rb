@@ -7,7 +7,7 @@ module FormsLab
       erb :root
     end
 
-    get '/new' do
+    post 'pirates/new' do
       erb :new
     end    # code other routes/actions here
 
