@@ -13,10 +13,8 @@ module FormsLab
 
     post '/show' do
 
-      @pirate = Pirate.new(params)
-      @pirate.name = params[:pirate[name]]
-      @pirate.weight = params[:pirate[weight]]
-      @pirate.height = params[:pirate[height]]
+      @pirate = Pirate.new(params[:pirate])
+      erb :'pirates/show'
     end
   end
 end
