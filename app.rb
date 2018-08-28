@@ -11,7 +11,7 @@ module FormsLab
       erb :'pirates/new'
     end    # code other routes/actions here
 
-    post '/new' do
+    post '/show' do
     
       @pirate = Pirate.new
       @pirate.name = params[:pirate[name]]
